@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Cureency_calculator();
+        function Cureency_calculator()
+        {
+            let Amount = Number(prompt("Enter the amount: "))
+            if (Amount>=2000)
+            {
+                let count_2000 = Math.trunc(Amount/2000)
+                console.log(`2000 * ${count_2000}=${2000*count_2000}`)
+                Amount = Amount%2000
+            }
+            if (Amount>=500)
+            {
+                let count_500 = Math.trunc(Amount/500)
+                console.log(`500 * ${count_500}=${500*count_500}`)
+                Amount = Amount%500
+            }
+            if (Amount>=200)
+            {
+                let count_200 = Math.trunc(Amount/200)
+                console.log(`200 * ${count_200}=${200*count_200}`)
+                Amount = Amount%200
+            }
+            if (Amount>=100)
+            {
+                let count_100 = Math.trunc(Amount/100)
+                console.log(`100 * ${count_100}=${100*count_100}`)
+                Amount = Amount%100
+            }
+            if (Amount>=50)
+            {
+                let count_50 = Math.trunc(Amount/50)
+                console.log(`50 * ${count_50}=${50*count_50}`)
+                Amount = Amount%50
+            }
+        }
+    </script>
+</body>
+</html>

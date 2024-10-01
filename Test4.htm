@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Today()
+        function Today()
+        {
+            let d1 = new Date()
+            let day = d1.getDay()
+            switch(day)
+            {
+                case 0:
+                    console.log('today is sunday')
+                    break
+                case 1:
+                    console.log('today is monday')
+                    break
+                case 2:
+                    console.log('today is tuesday')
+                    break
+                case 3:
+                    console.log('today is wednesday')
+                    break
+                case 4:
+                    console.log('today is thursday')
+                    break
+                case 5:
+                    console.log('today is friday')
+                    break
+                default:
+                    console.log('today is saturday')
+                    break
+
+            }
+        }
+    </script>
+</body>
+</html>
